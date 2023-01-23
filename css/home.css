@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #060e58;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* about */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 95vh;
+    overflow-x: hidden;
+}
+
+.about-us {
+    height: 100%;
+    width: 100%;
+}
+
+.about-us img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-us::after {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    opacity: 0.3;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.text a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1775ec;
+    padding: 12px 15px;
+    border-radius: 25px;
+    outline: none;
+    font-family: "Montserrat", Arial, sans-serif;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.text {
+    position: absolute;
+    max-width: 800px;
+}
+
+.text h2 {
+    font-size: 3.3vw;
+    color: #fff;
+    font-family: "Montserrat", Arial, sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.text h3 {
+    font-size: 3.3vw;
+    color: #fff;
+    font-family: "Montserrat", Arial, sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 30px;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.text p {
+    line-height: 60px !important;
+    font-size: 2.6vw;
+    word-spacing: 1px;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: "Montserrat", Arial, sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    margin-bottom: 30px;
+}
+/* about */
+
+/* services */
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    list-style: square;
+    gap: 12px;
+    font-size: 20px;
+    margin: 25px 0;
+    margin-left: 10px;
+}
+
+.service-info h5 {
+    margin: 30px 0px -10px 0px;
+}
+
+.service-info p {
+    font-size: 20px !important;
+}
+
+.services {
+    padding: 40px 0;
+}
+
+.service a {
+    text-decoration: none;
+    color: #1775ec;
+}
+
+.service-item {
+    border: 1px solid #9f9f9f;
+    padding: 20px 25px;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-item .service-img {
+    width: 55px;
+}
+
+.service-item .service-img img {
+    width: 100%;
+}
+
+.teacher {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.teacher-footer {
+    margin-top: 30px;
+}
+
+/* end services */
+
+/* counter */
+
+.student-info {
+    padding: 70px 0;
+}
+
+.counter {
+    color: #61a5fd;
+    font-family: "montserrat";
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    left: 0px;
+    position: relative;
+    z-index: 1;
+}
+.counter:before,
+.counter:after {
+    content: "";
+    background: #fff;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+.counter:after {
+    background: linear-gradient(45deg, #1775ec 49%, #61a5fd 50%);
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    transform: translate(0);
+    top: 0;
+    left: 0;
+    z-index: -2;
+    clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+}
+.counter .counter-icon {
+    color: #fff;
+    background: linear-gradient(45deg, #1775ec 49%, #61a5fd 50%);
+    font-size: 33px;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    z-index: 1;
+}
+
+.counter h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 0 3px;
+}
+.counter .counter-value {
+    font-size: 30px;
+    font-weight: 700;
+}
+.counter.orange {
+    color: #61a5fd;
+}
+.counter.orange:after,
+.counter.orange .counter-icon {
+    background: linear-gradient(45deg, #1775ec 49%, #61a5fd 50%);
+}
+.counter.green {
+    color: #61a5fd;
+}
+.counter.green:after,
+.counter.green .counter-icon {
+    background: linear-gradient(45deg, #1775ec 49%, #61a5fd 50%);
+}
+.counter.blue {
+    color: #61a5fd;
+}
+.counter.blue:after,
+.counter.blue .counter-icon {
+    background: linear-gradient(45deg, #1775ec 49%, #61a5fd 50%);
+}
+@media screen and (max-width: 990px) {
+    .counter {
+        margin-bottom: 40px;
+    }
+}
+/* end info */
+/* info */
+
+.info {
+    margin: 40px 0;
+}
+
+.info .tehsil-modeli {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    height: 180px;
+}
+
+.tehsil-modeli .left-side {
+    margin-right: 30px;
+    width: 100%;
+}
+
+.tehsil-modeli .left-side img {
+    width: 100%;
+    height: 100%;
+}
+
+/* end info */
+
+/* divider */
+
+.divider {
+    color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 30px 0;
+    background-color: #000;
+}
+
+.divider .right-side {
+    padding: 40px;
+}
+
+.divider .right-side h3 {
+    padding-bottom: 30px;
+}
+
+.divider .right-side a {
+    width: 200px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #1775ec;
+}
+
+/* end divider */
+
+/* footer */
+
+footer {
+    background-color: #000;
+    padding: 30px 0;
+}
+
+.footer-bottom {
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #fff;
+    color: #fff;
+}
+
+.footer-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer-links a {
+    font-size: 19px;
+    color: #fff;
+}
+
+footer .logo {
+    color: #fff;
+    font-size: 19px;
+    letter-spacing: 5px;
+}
+
+.footer-icons {
+    font-size: 19px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-icons a {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* end footer */
+
+.contact .row-1 {
+    align-items: center;
+}
+
+.contact-info {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 20px;
+    border: 1px solid #cfcfcf;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.qeydiyyat select {
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.qeydiyyat-form-container {
+    margin: 75px 0;
+    padding: 44px 0;
+}
+
+.qeydiyyat-form-container .s-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.font {
+    font-size: 20px;
+}
+
+.qeydiyyat-form {
+    box-shadow: 1px 1px 9px 2px #00000039;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.gallery .container {
+    width: 100%;
+    padding: 7px 60px;
+    max-width: 1100px;
+}
+.gallery-img {
+    margin-bottom: 20px;
+}
+
+.gallery-row .gallery-img img {
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 200px;
+    width: 100%;
+}
+
+.submit {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #9f9f9f;
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.padding {
+    padding: 90px 0;
+}
+
+.about-course {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.about-course ul {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about-course a {
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 30px;
+    border: 1px solid #1775ec;
+}
+
+.about-course a:hover {
+    transition: 0.5s;
+    background-color: #1775ec;
+    color: #fff;
+}
+
+.front-end-img img {
+    width: 100% !important;
+}
+@media (max-width: 768px) {
+    .about{
+        height: 92vh !important;
+    }
+    .swiper-slide img {
+        height: 350px !important;
+    }
+    .about-course {
+        margin-top: 20px;
+    }
+    .gallery-img img {
+        height: 300px !important;
+    }
+
+    .gallery .container {
+        padding: 10px;
+    }
+
+    .course {
+        flex-direction: column-reverse !important;
+    }
+
+    .student-info {
+        padding: 15px 0 !important;
+    }
+
+    .qeydiyyat-form {
+        padding: 20px 10px;
+    }
+
+    .counter {
+        height: 150px;
+        width: 150px;
+    }
+
+    .counter-icon {
+        top: -10px !important;
+        left: -10px !important;
+        font-size: 20px !important;
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .counter h3 {
+        font-size: 15px !important;
+    }
+
+    .counter-value {
+        font-size: 20px !important;
+    }
+
+    footer {
+        text-align: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 25px 0;
+    }
+
+    .divider .right-side {
+        padding: 30px 0 !important;
+    }
+    .divider .right-side a {
+        width: auto;
+    }
+    .nav-links {
+        display: none !important;
+    }
+
+    .about-us img {
+        object-fit: fill;
+    }
+
+    .tehsil-modeli {
+        display: flex;
+        flex-direction: column !important;
+        height: auto !important;
+        gap: 20px;
+    }
+    .burger {
+        display: flex !important;
+    }
+
+    .text {
+        max-width: 400px;
+    }
+
+    .text a {
+        padding: 8px !important;
+        font-size: 14px !important;
+    }
+
+    .text h2 {
+        font-size: 32px;
+    }
+    .text h3 {
+        font-size: 32px;
+    }
+    .text p {
+        font-size: 23px;
+        line-height: 30px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1020px) {
+    .about-course a {
+        width: 100% !important;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text {
+        max-width: 650px;
+    }
+    .text p {
+        font-size: 30px;
+        line-height: 45px !important;
+    }
+    .text h3 {
+        margin-top: 10px;
+        font-size: 35px;
+    }
+    .text h2 {
+        font-size: 35px;
+    }
+
+    .tehsil-modeli {
+        height: 200px;
+    }
+    .burger {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (min-width: 1020px) and (max-width: 1200px) {
+    .tehsil-modeli {
+        height: 250px !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .res-media-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 19px;
+    }
+
+    .service-item{
+        padding: 20px;
+    }
+
+    .service-item h3 {
+        font-size: 21px;
+    }
+
+    .gallery .gallery-img img {
+        height: 210px !important;
+    }
+
+    .burger {
+        font-size: 18px;
+        height: 35px;
+        width: 35px;
+    }
+
+    .logo {
+        font-size: 18px !important;
+    }
+
+    .about-us img {
+        width: 130%;
+    }
+    .text h2 {
+        font-size: 26px !important;
+    }
+    .text h3 {
+        font-size: 25px !important;
+    }
+    .text p {
+        font-size: 19px !important;
+        line-height: 20px !important;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+    }
+
+    .text a {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .overlay-container {
+        width: 80% !important;
+        gap: 5px;
+    }
+    .overlay-container .nav-link {
+        font-size: 19px !important;
+    }
+
+    .divider .right-side {
+        padding: 0px !important;
+        padding-bottom: 20px;
+    }
+}
