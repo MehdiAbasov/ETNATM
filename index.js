@@ -45,7 +45,7 @@ window.onload = myFunction()
 var myVar;
 
 function myFunction() {
-    myVar = setTimeout(showPage, 1000);
+    myVar = setTimeout(showPage, 500);
 }
 
 function showPage() {
