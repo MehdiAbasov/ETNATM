@@ -642,7 +642,7 @@ img {
 
 @media (max-width: 350px) {
     .about {
-        height: 92vh !important;
+        height: 88vh !important;
     }
     .res-media-icons a {
         width: 40px;
