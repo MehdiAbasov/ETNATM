@@ -40,7 +40,6 @@ function slider() {
 window.onload = slider()
 
 
-window.onload = myFunction()
 
 var myVar;
 
@@ -51,3 +50,5 @@ function myFunction() {
 function showPage() {
     document.getElementById("loader").style.scale = "0%";
 }
+
+window.onload = myFunction()
