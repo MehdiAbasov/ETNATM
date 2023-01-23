@@ -41,14 +41,14 @@ window.onload = slider()
 
 
 
-var myVar;
+// var myVar;
 
-function myFunction() {
-    myVar = setTimeout(showPage, 500);
-}
+// function myFunction() {
+//     myVar = setTimeout(showPage, 500);
+// }
 
-function showPage() {
-    document.getElementById("loader").style.scale = "0%";
-}
+// function showPage() {
+//     document.getElementById("loader").style.scale = "0%";
+// }
 
-window.onload = myFunction()
+// window.onload = myFunction()
