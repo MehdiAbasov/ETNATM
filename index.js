@@ -39,16 +39,3 @@ function slider() {
 
 window.onload = slider()
 
-
-
-// var myVar;
-
-// function myFunction() {
-//     myVar = setTimeout(showPage, 500);
-// }
-
-// function showPage() {
-//     document.getElementById("loader").style.scale = "0%";
-// }
-
-// window.onload = myFunction()
