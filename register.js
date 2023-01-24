@@ -1,6 +1,5 @@
 const serviceId = "service_kjmb127";
 const templateId = "template_9r1c2xu";
-// const publicKey = "aWBCmGJZRnyOC4-JE";
 
 const myForm = document.getElementById('qeydiyyatform');
 const btn = document.getElementById('regbtn');

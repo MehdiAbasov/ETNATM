@@ -7,11 +7,6 @@ const adsDiv = document.getElementById('adsDiv')
 barIcon.addEventListener("click", openPopUp);
 xmark.addEventListener("click", closePopUp);
 cls.addEventListener("click", closeAds)
-
-adsDiv.addEventListener('click', function () {
-    adsDiv.style.display = 'none'
-})
-
 overlay.addEventListener("click", function () {
     overlay.style.width = '0%'
 })
