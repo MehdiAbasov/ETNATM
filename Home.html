@@ -47,17 +47,6 @@
     </div>
     <!-- end responsive menu -->
 
-    <div class="seminar" id="adsDiv" >
-        <div class="seminar-container">
-            <div class="xmark" id="cls" onclick="closeAds()">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <h2>Seminarımıza Qatılmaq üçün</h2>
-            <a href="./Contact.html">Qeydiyyatdan Keç</a>
-        </div>
-    </div>
-
-
     <!-- navbar start -->
     <div class="container">
         <nav class="Navbar" id="navbar">
@@ -287,37 +276,38 @@
     </div>
     <!-- end info -->
 
+    <!-- testimonials -->
     <div class="container mb-5">
         <div class="head mb-5 text-center">
-            <h3>Qalereya</h3>
+            <h3>Rəylər</h3>
         </div>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="./img/diplom/diplom 1.jpg" alt="">
+                    <img src="./img/diplom/diplom 1.jpg" alt="diplom">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./img/diplom/diplom 2.jpg" alt="">
+                    <img src="./img/diplom/diplom 2.jpg" alt="diplom">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./img/diplom/diplom 3.jpg" alt="">
+                    <img src="./img/diplom/diplom 3.jpg" alt="diplom">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./img/diplom/diplom 4.jpg" alt="">
+                    <img src="./img/diplom/diplom 4.jpg" alt="diplom">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./img/diplom/diplom 5.jpg" alt="">
+                    <img src="./img/hədiyyələr/1.jpg" alt="diplom">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./img/diplom/diplom 6.jpg" alt="">
+                    <img src="./img/hədiyyələr/2.jpg" alt="diplom">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./img/diplom/diplom 7.jpg" alt="">
+                    <img src="./img/tələbələr/tələbələr 3.jpg" alt="diplom">
                 </div>
             </div>
         </div>
     </div>
-
+    <!-- testimonials -->
 
     <!-- divider -->
     <div class="container" data-aos-duration="1000" data-aos="fade-up">
@@ -385,22 +375,13 @@
             autoplay: {
                 delay: 1500,
             },
-            grabCursor: true,
             breakpoints: {
-                120: {
-                    slidesPerView: 1,
-                    spaceBetween: 20
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30
-                },
-                // when window width is >= 640px
                 1200: {
                     slidesPerView: 4,
-                    spaceBetween: 30
+                    spaceBetween: 20
                 }
-            }
+            },
+            grabCursor: true,
         });
     </script>
     <script>
@@ -409,7 +390,7 @@
     <script>
         window.addEventListener("scroll", function () {
             var nav = document.getElementById("navbar");
-            nav.classList.toggle('color', window.scrollY > 200);
+            nav.classList.toggle('color', window.scrollY > 100);
         })
     </script>
 </body>
