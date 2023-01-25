@@ -201,7 +201,7 @@ body {
 }
 
 .service-item h3 {
-    font-size: 19px;
+    font-size: 23px;
 }
 
 .service-item .service-img {
@@ -359,15 +359,16 @@ body {
     background-color: #000;
 }
 
-.divider .right-side {
+.divider .left-side {
     padding: 40px;
+    margin-bottom: 20px;
 }
 
-.divider .right-side h3 {
+.divider .left-side h3 {
     padding-bottom: 30px;
 }
 
-.divider .right-side a {
+.divider .left-side a {
     width: 200px;
     height: 40px;
     display: grid;
@@ -538,11 +539,15 @@ a {
     width: 100% !important;
 }
 
+img {
+    width: 100%;
+}
+
 .swiper-slide {
     height: 300px;
 }
 
-.swiper-slide img{
+.swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -610,12 +615,13 @@ a {
         margin: 25px 0;
     }
 
-    .divider .right-side {
+    .divider .left-side {
         padding: 30px 0 !important;
     }
-    .divider .right-side a {
+    .divider .left-side a {
         width: auto;
     }
+
     .nav-links {
         display: none !important;
     }
@@ -697,6 +703,17 @@ a {
 }
 
 @media (max-width: 370px) {
+    .divider .left-side h2 {
+        font-size: 20px;
+    }
+    .divider .left-side h3 {
+        font-size: 18px;
+    }
+
+    .divider .left-side h3 {
+        padding-bottom: 10px;
+    }
+
     .about {
         height: 84vh !important;
     }
@@ -753,7 +770,7 @@ a {
         font-size: 19px !important;
     }
 
-    .divider .right-side {
+    .divider .left-side {
         padding: 0px !important;
         padding-bottom: 20px;
     }
