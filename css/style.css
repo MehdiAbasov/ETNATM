@@ -78,8 +78,9 @@
 }
 
 .color {
+    transition: 0.9s;
     background-color: #fff;
-    height: 70px;
+    height: 70x;
     border-bottom: 2px solid #000;
 }
 
@@ -108,6 +109,7 @@
 }
 
 .navbar-container {
+    transition: 1s;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,7 +123,7 @@
     gap: 10px;
 }
 
-/* loader */
+/* loader
 .loader-container {
     display: flex;
     align-items: center;
@@ -135,9 +137,8 @@
     overflow: hidden;
     background-color: #fff;
     z-index: 9000;
-    transition: .3s;
+    transition: 0.3s;
 }
-
 
 .loader {
     color: #000;
@@ -185,7 +186,9 @@
         box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0,
             -3em 0em 0 0, -2em -2em 0 0.2em;
     }
-}
+} */
+
+
 /* overlay */
 
 .burger {
