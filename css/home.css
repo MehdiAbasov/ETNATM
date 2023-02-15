@@ -167,6 +167,11 @@ body {
 .service-item .service-img img {
     width: 100%;
 }
+
+.teacher{
+    padding-top: 50px;
+    margin-top: 51px;
+}
 /* end services */
 
 /* counter */
