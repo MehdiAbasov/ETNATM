@@ -19,10 +19,10 @@ valueDisplays.forEach((valueDisplay) => {
 var slideImg = document.getElementById("slideImg");
 
 var images = new Array(
-    "img/tələbələr/5.jpg",
-    "img/tələbələr/tələbələr 2.jpg",
-    "img/tələbələr/tələbələr 3.jpg",
-    "img/tələbələr/tələbələr 4.jpg"
+    "img/students/5.jpg",
+    "img/students/tələbələr 2.jpg",
+    "img/students/tələbələr 3.jpg",
+    "img/students/tələbələr 4.jpg"
 );
 
 let length = images.length;
