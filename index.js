@@ -20,9 +20,9 @@ var slideImg = document.getElementById("slideImg");
 
 var images = new Array(
     "img/students/5.jpg",
-    "img/students/tələbələr 2.jpg",
-    "img/students/tələbələr 3.jpg",
-    "img/students/tələbələr 4.jpg"
+    "img/students/2.jpg",
+    "img/students/3.jpg",
+    "img/students/4.jpg"
 );
 
 let length = images.length;
